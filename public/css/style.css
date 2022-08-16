@@ -5,11 +5,12 @@
 body{
     margin: 0px;
 }
-.barra-superior{
+.header{
     background-color: #EAC926;
 }
 .msj{
     text-align: center;
+    flex-grow: 1;
 }
 .navbar{
     display: none;
@@ -59,19 +60,34 @@ main{
 .precio{
     font-size: 18px;
     margin: auto;
-    flex-grow: 0.7;
+    flex-grow: 0.3;
 }
 .descuento{
     font-size: 16px;
     margin: auto;
     color: #39b54a;
-    flex-grow: 0.3;
+    flex-grow: 0.7;
 }
 .descripcion{
     font-size: 16px;
     margin: auto;
     display: none;
+    margin-bottom: 10px;
 }
+.truck{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    color: #39b54a;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: relative;
+    left: 85%;
+    top: -15px;
+    }
 .en-pie{
     padding: 15px;
     text-align: center;
@@ -80,9 +96,21 @@ main{
     size: 2em;
     margin-bottom: 10px;
 }
+.superior{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.logo{
+    flex-grow: 0.5;
+}
+.barra{
+    flex-grow: 0.5;
+}
 @media(min-width: 361px){
     .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        flex-grow: 0.5;
     }
     .descripcion{
         display: block;
@@ -93,7 +121,14 @@ main{
     .burger-menu{
         display: none;
     }
+    .seccion{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 @media(min-width: 769px){
-
+    .producto{
+        flex-grow: 0.25;
+    }
 }
