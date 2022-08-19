@@ -102,15 +102,20 @@ main{
     justify-content: space-around;
 }
 .logo{
-    flex-grow: 0.5;
+    width: 50%;
 }
 .barra{
-    flex-grow: 0.5;
+    width: 50%;
 }
 @media(min-width: 361px){
+    .seccion{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
     .producto{
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
-        flex-grow: 0.5;
+        width: 40%;
     }
     .descripcion{
         display: block;
@@ -121,14 +126,39 @@ main{
     .burger-menu{
         display: none;
     }
+    .logo{
+        width: 30%;
+    }
+    .barra{
+        width: 30%;
+        margin-left: 10%;
+    }
+    .msj{
+        width: 30%;
+    }
+    .navbar{
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+    }
+    .list{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .listItem{
+        margin-left: 10px;
+        margin-right: 10px;
+        flex-grow: 0.2;
+    }
+}
+@media(min-width: 769px){
     .seccion{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
     }
-}
-@media(min-width: 769px){
     .producto{
-        flex-grow: 0.25;
+        width: 20%;
     }
 }
